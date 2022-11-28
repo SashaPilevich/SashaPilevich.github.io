@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tasty/static/css/main.b95a8be8.css",
-    "main.js": "/tasty/static/js/main.d5640b1e.js",
+    "main.js": "/tasty/static/js/main.3ca2f841.js",
     "static/js/787.2b165e92.chunk.js": "/tasty/static/js/787.2b165e92.chunk.js",
     "static/media/backForShop.jpg": "/tasty/static/media/backForShop.35869b0a72ba696e2e46.jpg",
     "static/media/not.jpg": "/tasty/static/media/not.450e7f11ec0d475d40bb.jpg",
@@ -18,11 +18,11 @@
     "static/media/moon.svg": "/tasty/static/media/moon.171dcafc4307a035dc14.svg",
     "static/media/Iconlogout.svg": "/tasty/static/media/Iconlogout.e08b07c036d3bd477cc183a59d179020.svg",
     "main.b95a8be8.css.map": "/tasty/static/css/main.b95a8be8.css.map",
-    "main.d5640b1e.js.map": "/tasty/static/js/main.d5640b1e.js.map",
+    "main.3ca2f841.js.map": "/tasty/static/js/main.3ca2f841.js.map",
     "787.2b165e92.chunk.js.map": "/tasty/static/js/787.2b165e92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b95a8be8.css",
-    "static/js/main.d5640b1e.js"
+    "static/js/main.3ca2f841.js"
   ]
 }
