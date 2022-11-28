@@ -9,6 +9,7 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import { auth } from "./config/firebase";
 import logging from "./config/logging";
+import { HashRouter } from "react-router-dom";
 
 export const Context = createContext<{
   isDark: boolean;
@@ -59,14 +60,14 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <Context.Provider
             value={{ isDark: isDark, setIsDark: setIsDark, user, setUser }}
           >
             {isReady ? <Preloader /> : <RootRouter />}
           </Context.Provider>
           <NotificationContainer />
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     </div>
   );
