@@ -1,0 +1,148 @@
+.header,
+.headerMax {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+.headerMax {
+  background: goldenrod;
+  z-index: 9;
+}
+.visible {
+  height: 100%;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+.burgerMenu {
+  width: 27px;
+  height: 18px;
+  display: flex;
+  cursor: pointer;
+  margin-right: 40px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  padding-top: 10px;
+}
+.linear::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  border-radius: 11px;
+  background-color: goldenrod;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-7px) translateX(-13px);
+}
+.linear {
+  width: 27px;
+  height: 4px;
+  border-radius: 11px;
+  background-color: goldenrod;
+  transition: all 0.2s ease-in-out;
+}
+.linear::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  border-radius: 11px;
+  background-color: goldenrod;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(7px) translateX(-13px);
+}
+.open {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.open::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  border-radius: 11px;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(45deg) translate(35px, -35px);
+  z-index: 100;
+}
+.open::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  border-radius: 11px;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(-45deg) translate(35px, 35px);
+  z-index: 10;
+}
+
+.navbar {
+  animation: not-checked-anim 1s ease both;
+  background-color: goldenrod;
+  position: absolute;
+  left: 0;
+}
+.navOpen {
+  position: absolute;
+  left: 0;
+  background-color: goldenrod;
+  animation: checked-anim 1s ease both;
+  z-index: 50;
+}
+
+@keyframes checked-anim {
+  0% {
+    width: 3000px;
+    height: 150px;
+    background-color: transparent;
+    top: 0px;
+  }
+  100% {
+    top: 40px;
+    width: 100%;
+    height: 150px;
+    border-radius: 0;
+  }
+}
+@keyframes not-checked-anim {
+  0% {
+    background-color: goldenrod;
+    top: 40px;
+    width: 100%;
+    height: 150px;
+  }
+  100% {
+    background-color: transparent;
+    top: 0px;
+    width: 3000px;
+    height: 0px;
+  }
+}
+.burgerMenuNav {
+  padding-top: 30px;
+  width: 27px;
+  height: 18px;
+  display: block;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+@media (max-width: 670px) {
+  .visible {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 410px) {
+  .visible {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .visible {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,103 @@
+.input {
+  margin: 0 auto 10px;
+  display: flex;
+  width: 250px;
+  height: 20px;
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  color: dimgrey;
+  outline: none;
+}
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: gray;
+}
+.burgerMenu {
+  display: none;
+  opacity: 0;
+  z-index: 2;
+}
+.delivery,
+.inputForRegistration,
+.error {
+  width: 300px;
+  height: 50px;
+  background: #f5f9ff;
+  border: 2px solid goldenrod;
+  border-radius: 30px;
+}
+.radio {
+  margin: 0 20px 0 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.label,
+.darkLabel {
+  width: 166px;
+  height: 29px;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #254050;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.darkLabel {
+  color: white;
+}
+.textError,
+.darkTextError {
+  font-size: 16px;
+  width: 300px;
+  color: #254050;
+  text-align: center;
+}
+.darkTextError {
+  color: goldenrod;
+}
+
+.forRadio,
+.darkForRadio {
+  color: #254050;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.darkForRadio {
+  color: white;
+}
+@media (max-width: 768px) {
+  .delivery,
+  .inputForRegistration,
+  .error {
+    width: 230px;
+    height: 40px;
+    background: #f5f9ff;
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+  }
+  .label,
+  .darkLabel {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 630px) {
+  .delivery,
+  .inputForRegistration,
+  .error {
+    width: 200px;
+    height: 35px;
+  }
+  .label,
+  .darkLabel {
+    margin-left: 50px;
+  }
+}

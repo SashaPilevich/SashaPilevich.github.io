@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+}
+.postsPanel {
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway";
+  text-align: left;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+  margin-right: 100px;
+  margin-left: 150px;
+}
+.allPosts,
+.privatePosts {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.linkContainer {
+  display: flex;
+  margin-left: 150px;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 100px;
+}
+.link {
+  text-align: left;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px 0px 10px 0px;
+}
+.dark {
+  padding-top: 10px;
+  margin-left: 100px;
+}
+.loginToggle {
+  padding: 10px;
+}
+.logoutImage {
+  padding-top: 0px;
+}
+.logOut {
+  width: 120px;
+  height: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  font-family: "Raleway";
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 17px;
+  margin-left: 40px;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 670px) {
+  .linkContainer {
+    margin-left: 50px;
+  }
+  ul {
+    margin-right: 50px;
+  }
+  .dark {
+    margin-left: 50px;
+  }
+  .postsPanel {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    justify-content: center;
+  }
+  .linkContainer {
+    margin-left: 20px;
+  }
+  ul {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .link {
+    font-size: 16px;
+  }
+  .dark {
+    margin-left: 20px;
+  }
+  .logOut {
+    font-size: 16px;
+    margin-left: 27px;
+    height: 40px;
+    padding-top: 8px;
+  }
+  .postsPanel {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .loginToggle {
+    padding: 7px;
+  }
+  .logoutImage {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .postsPanel {
+    margin: 10px;
+    font-size: 16px;
+  }
+  .loginToggle {
+    padding-top: 20px;
+  }
+}

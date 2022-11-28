@@ -1,0 +1,174 @@
+.ingredientsShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+}
+.recipeTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: goldenrod;
+  text-align: left;
+  margin: 0px 0px 20px 30px;
+  padding-top: 15px;
+}
+.recipeItem {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  margin-left: 30px;
+}
+.recipeImage {
+  width: 270px;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.containerIngredients {
+  display: flex;
+  margin-left: 100px;
+}
+.ingredients {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.itemIngredients,
+.itemQuantity,
+.darkItem {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.instructionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 400px;
+  margin-left: 30px;
+  overflow-y: auto;
+}
+.itemQuantity {
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 19px;
+}
+.itemInstructions,
+.darkItemInstructions {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.darkItem,
+.darkItemInstructions {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .recipeItem {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .recipeTitle {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerIngredients {
+    margin-left: 30px;
+  }
+  .ingredients {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .instructionsContainer {
+    width: 90%;
+    height: 400px;
+    margin-left: 10px;
+    overflow-y: auto;
+  }
+  .itemInstructions,
+  .darkItem {
+    font-size: 16px;
+  }
+  .containerIngredients {
+    margin-left: 10px;
+  }
+  .ingredients {
+    margin-right: 50px;
+  }
+  .recipeImage {
+    width: 40%;
+  }
+
+  .video {
+    width: 100%;
+  }
+  .recipeItem {
+    width: 95%;
+  }
+  .recipeTitle {
+    font-size: 36px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .containerIngredients {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ingredients {
+    margin-right: 100px;
+  }
+  .recipeImage {
+    display: none;
+  }
+  .recipeItem {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .containerIngredients {
+    margin: 0 auto;
+  }
+  .itemIngredients,
+  .itemQuantity {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .recipeTitle {
+    font-size: 32px;
+    line-height: 25px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+  }
+  .ingredients {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .controlIngredient {
+    width: 90%;
+  }
+  .ingredients {
+    margin-right: 20px;
+  }
+}

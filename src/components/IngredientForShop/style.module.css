@@ -1,0 +1,42 @@
+.controlIngredient,
+.darkControlIngredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: rgb(46, 43, 43, 0.5);
+  border-radius: 10px;
+}
+.darkControlIngredient {
+  border: 1px solid gray;
+  background-color: transparent;
+}
+.itemIngredientsInShop,
+.darkItemInShop {
+  font-family: "Raleway";
+  text-align: left;
+  margin-bottom: 0px;
+  margin: 0px 0px 0px 5px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+@media (max-width: 560px) {
+  .controlIngredient,
+  .darkControlIngredient {
+    width: 70%;
+    height: 40px;
+  }
+  .itemIngredientsInShop,
+  .darkItemInShop {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .controlIngredient,
+  .darkControlIngredient {
+    width: 80%;
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  margin-bottom: 50px;
+}
+.active_link,
+.darkActiveLink,
+span,
+.unactive,
+.darkUnactive {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 145.2%;
+  letter-spacing: 0.03em;
+  color: goldenrod;
+  text-decoration: underline;
+}
+span {
+  color: #254050;
+}
+.unactive,
+.darkUnactive {
+  color: #75869b;
+}
+@media (max-width: 500px) {
+  .active_link,
+  .darkActiveLink,
+  .unactive,
+  .darkUnactive,
+  span {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,112 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.container,
+.LikeSaveContainer {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  justify-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-bottom: 50px;
+}
+.LikeSaveContainer {
+  padding-top: 170px;
+}
+.wrapper {
+  width: 250px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #faf9f6;
+  box-shadow: 1px 1px 5px 2px rgb(92, 64, 51, 0.3);
+  border-radius: 13px;
+}
+.darkContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .container,
+  .LikeSaveContainer {
+    grid-template-columns: repeat(3, 0.3fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .LikeSaveContainer {
+    padding-top: 230px;
+  }
+  .wrapper {
+    height: 500px;
+  }
+}
+@media (max-width: 900px) {
+  .container,
+  .LikeSaveContainer {
+    grid-template-columns: repeat(2, 0.4fr);
+  }
+}
+@media (max-width: 768px) {
+  .LikeSaveContainer {
+    padding-top: 230px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container,
+  .LikeSaveContainer {
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+  }
+  .wrapper {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 55%;
+  }
+}
+@media (max-width: 460px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+@media (max-width: 421px) {
+  .wrapper {
+    width: 65%;
+    margin-left: 10px;
+    height: 500px;
+  }
+}
+@media (max-width: 395px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .wrapper {
+    width: 75%;
+  }
+}
+@media (max-width: 340px) {
+  .wrapper {
+    width: 77%;
+  }
+}
+@media (max-width: 327px) {
+  .wrapper {
+    width: 80%;
+  }
+}
